@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>国际化</title>
+</head>
+<body>
+<div>
+  <table border="1" cellspacing="0">
+    <tr>
+      <th th:text="#{name}"></th>
+      <th th:text="#{age}"></th>
+      <th th:text="#{email}"></th>
+      <th th:text="#{phone}"></th>
+    </tr>
+    <tr th:each="stu:${stus}">
+      <td th:text="${stu.name}"></td>
+      <td th:text="${stu.age}"></td>
+      <td th:text="${stu.email}"></td>
+      <td th:text="${stu.phone}"></td>
+    </tr>
+
+  </table>
+</div>
+</body>
+</html>
