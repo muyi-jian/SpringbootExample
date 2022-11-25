@@ -1,0 +1,47 @@
+#MyBatis
+mybatis:
+  type-aliases-package: spring.boot.mapper
+  mapper-locations: classpath:mapper/*.xml
+#Spring
+spring:
+  datasource:
+    druid:
+      master:
+        url: jdbc:mysql://localhost:3308/testsql?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+        username: root
+        password: 123456
+      slave:
+        enabled: true
+        url: jdbc:mysql://localhost:3308/testsqlone?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+        username: root
+        password: 123456
+      min-idle: 10
+      initial-size: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      max-evictable-idle-time-millis: 900000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      web-stat-filter:
+        enabled: true
+      stat-view-servlet:
+        enabled: true
+        allow:
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: 123456
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
