@@ -1,0 +1,8 @@
+spring:
+  devtools:
+    restart:
+      # 设置不参与热部署的文件或文件夹
+      # /** 表示此目录下的所有文件
+      # config/application.yml 已经具体到哪个目录下的哪个文件
+      exclude: static/**
+      enabled: false
