@@ -1,7 +1,7 @@
 #MyBatis
 mybatis:
-  type-aliases-package: spring.boot.mapper
-  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: spring.boot.spring.boot.mapper
+  mapper-locations: classpath:spring.boot.mapper/*.xml
 #Spring
 spring:
   datasource:

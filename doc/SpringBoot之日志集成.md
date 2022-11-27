@@ -74,7 +74,7 @@ debug: 当此属性设置为true时，将打印出logback内部日志信息，�
     <!--
     子节点<property> ：用来定义变量值，它有两个属性name和value，通过<property>定义的值会被插入到logger上下文中，可以使“${}”来使用变量。
     -->
-    <property name="APP_NAME" value="jobmd-extra-service"/>
+    <property name="APP_NAME" value="jobmd-extra-spring.boot.service"/>
     <property name="LOG_HOME" value="logs"/>
     <!--
      子节点<timestamp>：获取时间戳字符串，他有两个属性key和datePattern

@@ -2,7 +2,7 @@
 [2022-11-22 20:23:17.017] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
 [2022-11-22 20:23:18.018] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:23:18.018] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:23:18.018] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:23:18.018] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:23:18.018] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:23:18.018] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:23:18.018] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 932 ms
@@ -20,7 +20,7 @@
 [2022-11-22 20:25:36.036] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
 [2022-11-22 20:25:37.037] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:25:37.037] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:25:37.037] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:25:37.037] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:25:37.037] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:25:37.037] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:25:37.037] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 1417 ms
@@ -36,7 +36,7 @@
 [2022-11-22 20:29:29.029] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
 [2022-11-22 20:29:30.030] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:29:30.030] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:29:30.030] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:29:30.030] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:29:30.030] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:29:30.030] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:29:30.030] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 1006 ms
@@ -114,7 +114,7 @@
 [2022-11-22 20:31:19.019] [org.springframework.boot.web.servlet.server.DocumentRoot] [main] [149] [DEBUG] None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
 [2022-11-22 20:31:19.019] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:31:19.019] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:31:19.019] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:31:19.019] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:31:19.019] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:31:19.019] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:31:19.019] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [286] [DEBUG] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
@@ -427,7 +427,7 @@ Positive matches:
 
    JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
       - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
-      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-spring.boot.mapper=jackson) matched (OnPropertyCondition)
       - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
 
    JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
@@ -1057,7 +1057,7 @@ Negative matches:
 
    Saml2RelyingPartyAutoConfiguration:
       Did not match:
-         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.spring.boot.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
 
    SecurityAutoConfiguration:
       Did not match:
@@ -1201,7 +1201,7 @@ Unconditional classes:
 [2022-11-22 20:32:06.006] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
 [2022-11-22 20:32:07.007] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:32:07.007] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:32:07.007] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:32:07.007] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:32:07.007] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:32:07.007] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:32:07.007] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 981 ms
@@ -1212,7 +1212,7 @@ Unconditional classes:
 [2022-11-22 20:41:44.044] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
 [2022-11-22 20:41:45.045] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
 [2022-11-22 20:41:45.045] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
-[2022-11-22 20:41:45.045] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-11-22 20:41:45.045] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting spring.boot.service [Tomcat]
 [2022-11-22 20:41:45.045] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.68]
 [2022-11-22 20:41:45.045] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
 [2022-11-22 20:41:45.045] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 1259 ms
