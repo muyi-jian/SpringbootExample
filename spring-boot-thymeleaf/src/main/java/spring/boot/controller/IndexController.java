@@ -25,4 +25,5 @@ public class IndexController {
         m.addAttribute("userInfo",list);
         return "test";
     }
+
 }
