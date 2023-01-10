@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+management:
+  security:
+    enabled: false #关掉安全认证
+  port: 8080
+  context-path: /monitor #actuator的访问路径
+  endpoints:
+    shutdown:
+        enabled: true
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

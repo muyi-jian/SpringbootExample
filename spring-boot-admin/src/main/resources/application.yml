@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /admin-server
+spring:
+  boot:
+    admin:
+      notify:
+        mail:
+          to: yangjian2628168@163.com
+          from: 1475136846@qq.com
+      monitor:
+        default-timeout: 30000
+
+  mail:
+    host: smtp.qq.com # smtp.qq.com  host地址（可以在你的邮箱设置里找到）
+    username: 1475136846@qq.com #邮箱地址，对应host的主机
+    password: fimquffeznbhhdab #授权码
+    properties:
+      "[mail.smtp.socketFactory.class]": javax.net.ssl.SSLSocketFactory
+      "[mail.smtp.socketFactory.fallback]": false
+      "[mail.smtp.socketFactory.port]": 465
+      "[mail.smtp.connectiontimeout]": 5000
+      "[mail.smtp.timeout]": 3000
+      "[mail.smtp.writetimeout]": 5000

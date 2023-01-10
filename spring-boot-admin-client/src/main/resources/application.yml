@@ -1,0 +1,40 @@
+#设置端口,client的端口不要和server的端口冲突
+server:
+  port: 8081
+spring:
+  boot:
+    admin:
+      client:
+        # 此url指向server端
+        url: http://localhost:8080/admin-server
+
+management:
+  #  开启了health 信息
+  endpoint:
+    health:
+      show-details: always
+    #设置单个info端点开放
+  info:
+    env:
+      enabled: true
+
+  #  设置web端开启了全部信息
+  endpoints:
+    web:
+      exposure:
+        # 可以是* ，需要加单引号 ，但是建议用啥开启啥
+        include: "*"
+    #      开放全部端点
+    enabled-by-default: true
+
+
+
+
+info:
+  #  在info中设置了一个author,它的值是 qing
+  author: yj
+  company: yj
+  appName: @project.artifactId@
+  version: @project.version@
+
+
