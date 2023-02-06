@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/spring-boot-JdbcTemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-JdbcTemplate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-admin-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-devtools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-email/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-helloworld/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-https/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-https/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-servlet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-servlet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-swagger3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-war/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-war/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
