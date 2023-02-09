@@ -10,6 +10,7 @@
         <module name="spring-boot-admin" />
         <module name="spring-boot-admin-client" />
         <module name="spring-boot-config" />
+        <module name="spring-boot-redis" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-swagger3" />
@@ -38,6 +39,7 @@
       <module name="spring-boot-JdbcTemplate" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
       <module name="spring-boot-mybatis1" target="1.8" />
+      <module name="spring-boot-redis" target="8" />
       <module name="spring-boot-servlet" target="1.8" />
       <module name="spring-boot-swagger" target="1.8" />
       <module name="spring-boot-swagger3" target="1.8" />
@@ -59,6 +61,7 @@
       <module name="spring-boot-https" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
       <module name="spring-boot-mybatis1" options="-parameters" />
+      <module name="spring-boot-redis" options="-parameters" />
       <module name="spring-boot-servlet" options="-parameters" />
       <module name="spring-boot-swagger" options="-parameters" />
       <module name="spring-boot-swagger3" options="-parameters" />
