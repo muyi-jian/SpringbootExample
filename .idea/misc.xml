@@ -27,6 +27,8 @@
         <option value="$PROJECT_DIR$/spring-boot-war/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-xmlandjson/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis-verification-code/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis-jedis/pom.xml" />
       </list>
     </option>
   </component>
