@@ -25,7 +25,7 @@ public class TestController {
 
     @RequestMapping("/inserBo")
     public void insertBo(){
-        String uuid = CommonUtil.get30UUID();
+        String uuid = CommonUtil.get10UUID(10);
         int num =  this.studentService.insertBo(uuid);
     }
 }

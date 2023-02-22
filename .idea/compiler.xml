@@ -25,6 +25,7 @@
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-war" />
+        <module name="spring-boot-mongoDB" />
         <module name="spring-boot-xmlandjson" />
         <module name="spring-boot-redis-verification-code" />
       </profile>
@@ -39,6 +40,7 @@
       <module name="spring-boot-helloworld" target="1.8" />
       <module name="spring-boot-https" target="1.8" />
       <module name="spring-boot-JdbcTemplate" target="1.8" />
+      <module name="spring-boot-mongoDB" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
       <module name="spring-boot-mybatis1" target="1.8" />
       <module name="spring-boot-redis" target="8" />
@@ -50,6 +52,7 @@
       <module name="spring-boot-thymeleaf" target="1.8" />
       <module name="spring-boot-war" target="1.8" />
       <module name="spring-boot-xmlandjson" target="1.8" />
+      <module name="wrapper" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -63,6 +66,7 @@
       <module name="spring-boot-email" options="-parameters" />
       <module name="spring-boot-helloworld" options="-parameters" />
       <module name="spring-boot-https" options="-parameters" />
+      <module name="spring-boot-mongoDB" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
       <module name="spring-boot-mybatis1" options="-parameters" />
       <module name="spring-boot-redis" options="-parameters" />
