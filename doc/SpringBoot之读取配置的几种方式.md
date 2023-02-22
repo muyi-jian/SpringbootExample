@@ -119,7 +119,7 @@ userinfo:
 
     资源目录下创建config/userinfo-config.properties
 
-    <img src="F:\学习笔记\Notes\attachment\SpringBoot之读取配置的几种方式.assets\image-20221122192148756.png" alt="image-20221122192148756"  />
+    <img src="image/SpringBoot之读取配置的几种方式.assets/image-20221122192148756.png" alt="image-20221122192148756"  />
 
     ```java
     package spring.boot.entity;

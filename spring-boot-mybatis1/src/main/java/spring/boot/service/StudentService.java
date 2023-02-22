@@ -11,4 +11,6 @@ public interface StudentService {
     int update(Student student);
     int deleteBysno(String sno);
     Student queryStudentBySno(String sno);
+
+    int insertBo(String uuid);
 }

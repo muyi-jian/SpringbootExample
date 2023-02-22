@@ -26,7 +26,7 @@
     public @interface SpringBootApplication {}
     ```
 
-    使用@SpringBootApplication 等同于使用@SpringBootConfiguration、@ComponentScan、@EnableAutoConfiguration是三个注解。
+    使用@SpringBootApplication 等同于使用@SpringBootConfiguration、@ComponentScan、@EnableAutoConfiguration是三个注解。可以用这三个注解来代替 `@SpringBootApplication` 注解。
 
     
 
@@ -93,53 +93,150 @@
 
     表示该方法的返回结果直接写入HTTP response body中，一般在异步获取数据时使用，用于构建RESTful的api。在使用@RequestMapping后，返回值通常解析为跳转路径，加上@esponsebody后返回结果不会被解析为跳转路径，而是直接写入HTTP response body中。比如异步获取json数据，加上@Responsebody后，会直接返回json数据。该注解一般会配合@RequestMapping一起使用。
 
-3. @Controller：
+3. @Conditional
 
-    用于定义控制器类，在spring项目中由控制器负责将用户发来的URL请求转发到对应的服务接口（service层），一般这个注解在类中，通常方法需要配合注解@RequestMapping。
+    这是 Spring 4.0 添加的新注解，用来标识一个 Spring Bean 或者  Configuration 配置文件，当满足指定的条件才开启配置。
 
-4. @RestController：
+4. @ConditionalOnBean
 
-    注解是@Controller和@ResponseBody的合集,表示这是个控制器bean,用于标注控制层组件(如struts中的action),并且是将函数的返回值直接填入HTTP响应体中,是REST风格的控制器。
+    组合 `@Conditional` 注解，当容器中有指定的 Bean 才开启配置。
 
-5. @RequestMapping：提供路由信息，负责URL到Controller中的具体函数的映射。
+5. @ConditionalOnMissingBean
 
-6. @EnableAutoConfiguration：SpringBoot自动配置（auto-configuration）：尝试根据你添加的jar依赖自动配置你的Spring应用。例如，如果你的classpath下存在HSQLDB，并且你没有手动配置任何数据库连接beans，那么我们将自动配置一个内存型（in-memory）数据库”。你可以将@EnableAutoConfiguration或者@SpringBootApplication注解添加到一个@Configuration类上来选择自动配置。如果发现应用了你不想要的特定自动配置类，你可以使用@EnableAutoConfiguration注解的排除属性来禁用它们。
+    组合 `@Conditional` 注解，和 `@ConditionalOnBean` 注解相反，当容器中没有指定的 Bean 才开启配置。
 
-7. @ComponentScan：表示将该类自动发现扫描组件。个人理解相当于，如果扫描到有@Component、@Controller、@Service等这些注解的类，并注册为Bean，可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。如果没有配置的话，Spring Boot会扫描启动类所在包下以及子包下的使用了@Service,@Repository等注解的类。
+6. @ConditionalOnClass
 
-8. @Configuration：相当于传统的xml配置文件，如果有些第三方库需要用到xml文件，建议仍然通过@Configuration类作为项目的配置主类——可以使用@ImportResource注解加载xml配置文件。
+    组合 `@Conditional` 注解，当容器中有指定的 Class 才开启配置。
 
-9. @Import：用来引入额外的一个或者多个 `@Configuration` 修饰的配置文件类。
+7. @ConditionalOnMissingClass
 
-10. @ImportResource：用来加载xml配置文件。
+    组合 `@Conditional` 注解，和 `@ConditionalOnMissingClass` 注解相反，当容器中没有指定的 Class 才开启配置。
 
-    如果有些通过类的注册方式配置不了的，可以通过这个注解引入额外的 XML 配置文件，有些老的配置文件无法通过 `@Configuration` 方式配置的非常管用。
+8. @ConditionalOnWebApplication
 
-11. @PathVariable：获取参数。
+    组合 `@Conditional` 注解，当前项目类型是 WEB 项目才开启配置。
 
-12. @JsonBackReference：解决嵌套外链问题。
+9. @ConditionalOnNotWebApplication
 
-13. @RepositoryRestResourcepublic：配合spring-boot-starter-data-rest使用。
+    组合 `@Conditional` 注解，和 `@ConditionalOnWebApplication` 注解相反，当前项目类型不是 WEB 项目才开启配置。
 
-14. @Service：一般用于修饰service层的组件
+10. @ConditionalOnProperty
 
-15. @Repository：使用@Repository注解可以确保DAO或者repositories提供异常转译，这个注解修饰的DAO或者repositories类会被ComponetScan发现并配置，同时也不需要为它们提供XML配置项。
+    组合 `@Conditional` 注解，当指定的属性有指定的值时才开启配置。
 
-16. @Bean：用@Bean标注方法等价于XML中配置的`<bean ...>` 配置,相当于XML中的,放在方法的上面，而不是类，意思是产生一个bean,并交给spring管理。
+11. @ConditionalOnExpression
 
-17. @Value：注入Spring boot application.properties配置的属性的值。示例代码：
+      组合 `@Conditional` 注解，当 SpEL 表达式为 true 时才开启配置。
 
-18. @Inject：等价于默认的@Autowired，只是没有required属性；
+12. @ConditionalOnJava
 
-19. @Component：泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。
+      组合 `@Conditional` 注解，当运行的 Java JVM 在指定的版本范围时才开启配置。
 
-20. @AutoWired：自动导入依赖的bean。byType方式。把配置好的Bean拿来用，完成属性、方法的组装，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。当加上（required=false）时，就算找不到bean也不报错。
+13. @ConditionalOnResource
 
-21. @Qualifier：当有多个同一类型的Bean时，可以用@Qualifier(“name”)来指定。与@Autowired配合使用。@Qualifier限定描述符除了能根据名字进行注入，但能进行更细粒度的控制如何选择候选者，具体使用方式如下：
+      组合 `@Conditional` 注解，当类路径下有指定的资源才开启配置。
 
-      @Resource(name=”name”,type=”type”)：没有括号内内容的话，默认byName。与@Autowired干类似的事。
+14. @ConditionalOnJndi
 
-22. x
+      组合 `@Conditional` 注解，当指定的 JNDI 存在时才开启配置。
+
+15. @ConditionalOnCloudPlatform
+
+      组合 `@Conditional` 注解，当指定的云平台激活时才开启配置。
+
+16. @ConditionalOnSingleCandidate
+
+      组合 `@Conditional` 注解，当指定的 class 在容器中只有一个 Bean，或者同时有多个但为首选时才开启配置。
+
+17. @ConfigurationProperties
+
+      用来加载额外的配置（如 .properties 文件），可用在 `@Configuration` 注解类，或者 `@Bean` 注解方法上面。
+
+      关于这个注解的用法可以参考《[Spring Boot读取配置的几种方式](https://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247484575&idx=1&sn=56c88cd7283374345d891e85a800539b&scene=21#wechat_redirect)》这篇文章。
+
+18. @EnableConfigurationProperties
+
+      一般要配合 `@ConfigurationProperties` 注解使用，用来开启对 `@ConfigurationProperties` 注解配置 Bean 的支持。
+
+19. @AutoConfigureAfter
+
+      用在自动配置类上面，表示该自动配置类需要在另外指定的自动配置类配置完之后。
+
+      如 Mybatis 的自动配置类，需要在数据源自动配置类之后。
+
+      ```
+      @AutoConfigureAfter(DataSourceAutoConfiguration.class)
+      public class MybatisAutoConfiguration {
+      ```
+
+20. @AutoConfigureBefore
+
+      这个和 `@AutoConfigureAfter` 注解使用相反，表示该自动配置类需要在另外指定的自动配置类配置之前。
+
+      
+
+21. @Controller：
+
+      用于定义控制器类，在spring项目中由控制器负责将用户发来的URL请求转发到对应的服务接口（service层），一般这个注解在类中，通常方法需要配合注解@RequestMapping。
+
+22. @RestController：
+
+      注解是@Controller和@ResponseBody的合集,表示这是个控制器bean,用于标注控制层组件(如struts中的action),并且是将函数的返回值直接填入HTTP响应体中,是REST风格的控制器。
+
+23. @RequestMapping：提供路由信息，负责URL到Controller中的具体函数的映射。
+
+24. @EnableAutoConfiguration：SpringBoot自动配置（auto-configuration）：尝试根据你添加的jar依赖自动配置你的Spring应用。例如，如果你的classpath下存在HSQLDB，并且你没有手动配置任何数据库连接beans，那么我们将自动配置一个内存型（in-memory）数据库”。你可以将@EnableAutoConfiguration或者@SpringBootApplication注解添加到一个@Configuration类上来选择自动配置。如果发现应用了你不想要的特定自动配置类，你可以使用@EnableAutoConfiguration注解的排除属性来禁用它们。
+
+25. @ComponentScan：表示将该类自动发现扫描组件。个人理解相当于，如果扫描到有@Component、@Controller、@Service等这些注解的类，并注册为Bean，可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。如果没有配置的话，Spring Boot会扫描启动类所在包下以及子包下的使用了@Service,@Repository等注解的类。
+
+26. @Configuration：相当于传统的xml配置文件，如果有些第三方库需要用到xml文件，建议仍然通过@Configuration类作为项目的配置主类——可以使用@ImportResource注解加载xml配置文件。
+
+27. @Import：用来引入额外的一个或者多个 `@Configuration` 修饰的配置文件类。
+
+      这是 Spring 3.0 添加的新注解，用来导入一个或者多个 `@Configuration` 注解修饰的类，这在 Spring Boot 里面应用很多。
+
+28. @ImportResource：用来加载xml配置文件。
+
+      如果有些通过类的注册方式配置不了的，可以通过这个注解引入额外的 XML 配置文件，有些老的配置文件无法通过 `@Configuration` 方式配置的非常管用。
+
+      这是 Spring 3.0 添加的新注解，用来导入一个或者多个 Spring  配置文件，这对 Spring Boot 兼容老项目非常有用，因为有些配置无法通过 Java Config 的形式来配置就只能用这个注解来导入。
+
+29. @PathVariable：获取参数。
+
+30. @JsonBackReference：解决嵌套外链问题。
+
+31. @RepositoryRestResourcepublic：配合spring-boot-starter-data-rest使用。
+
+32. @Service：一般用于修饰service层的组件
+
+33. @Repository：使用@Repository注解可以确保DAO或者repositories提供异常转译，这个注解修饰的DAO或者repositories类会被ComponetScan发现并配置，同时也不需要为它们提供XML配置项。
+
+34. @Bean：用@Bean标注方法等价于XML中配置的`<bean ...>` 配置,相当于XML中的,放在方法的上面，而不是类，意思是产生一个bean,并交给spring管理。
+
+     - @Bean 方法也可以在用 @Configuration注释的类中声明。
+
+     - 例如，可以在 @Component 类中甚至在其他类中将bean方法声明为。
+
+         在这种情况下， @Bean方法将以所谓的lite模式进行处理。
+
+     - bean 容器中将 lite模式下的 Bean方法视为普通的工厂方法（类似于XML中的 factory-method声明），适当地应用范围和生命周期回调。在这种情况下，包含的类保持不变，并且对于包含类或工厂方法没有异常约束。
+
+     - 与 @Configuration类中bean方法的语义相反，在lite模式下不支持 bean间引用 。相反，当一个 @Bean方法以lite模式调用另一个@Bean方法时，该调用是标准的Java方法调用；Spring不会通过CGLIB代理拦截调用。这类似于内部 @Transactional方法调用，然而在代理模式下，Spring不会拦截调用；但是仅在AspectJ模式下，Spring会拦截调用
+
+35. @Value：注入Spring boot application.properties配置的属性的值。示例代码：
+
+36. @Inject：等价于默认的@Autowired，只是没有required属性；
+
+37. @Component：泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。
+
+38. @AutoWired：自动导入依赖的bean。byType方式。把配置好的Bean拿来用，完成属性、方法的组装，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。当加上（required=false）时，就算找不到bean也不报错。
+
+39. @Qualifier：当有多个同一类型的Bean时，可以用@Qualifier(“name”)来指定。与@Autowired配合使用。@Qualifier限定描述符除了能根据名字进行注入，但能进行更细粒度的控制如何选择候选者，具体使用方式如下：
+
+        @Resource(name=”name”,type=”type”)：没有括号内内容的话，默认byName。与@Autowired干类似的事。
+
+40. x
 
 #### JPA注解
 

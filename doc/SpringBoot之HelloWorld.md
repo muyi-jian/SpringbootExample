@@ -12,15 +12,15 @@
 
     阿里：http://start.aliyun.com或https://start.aliyun.com
 
-    <img src="F:\学习笔记\Notes\attachment\SpringBoot之HelloWorld.assets\image-20221121214335058.png" alt="image-20221121214335058" style="zoom: 80%;" />
+    <img src="image/SpringBoot之HelloWorld.assets/image-20221121214335058.png" alt="image-20221121214335058" style="zoom: 80%;" />
 
 - 选择版本和所需的技术
 
-    <img src="F:\学习笔记\Notes\attachment\SpringBoot之HelloWorld.assets\image-20221121214546434.png" alt="image-20221121214546434" style="zoom:80%;" />
+    <img src="image/SpringBoot之HelloWorld.assets/image-20221121214546434.png" alt="image-20221121214546434" style="zoom:80%;" />
 
 - 创建成功后，项目结构如下
 
-    <img src="F:\学习笔记\Notes\attachment\SpringBoot之HelloWorld.assets\image-20221121214757905.png" alt="image-20221121214757905" style="zoom:80%;" />
+    <img src="image/SpringBoot之HelloWorld.assets/image-20221121214757905.png" alt="image-20221121214757905" style="zoom:80%;" />
 
 - 创建一个HelloWorldController
 
@@ -49,7 +49,7 @@
 
 - 运行，浏览器输入http://localhost:8080/helloWorld
 
-<img src="F:\学习笔记\Notes\attachment\SpringBoot之HelloWorld.assets\image-20221121215805098.png" alt="image-20221121215805098" style="zoom:80%;" />
+<img src="image/SpringBoot之HelloWorld.assets/image-20221121215805098.png" alt="image-20221121215805098" style="zoom:80%;" />
 
 - 打包发布
 

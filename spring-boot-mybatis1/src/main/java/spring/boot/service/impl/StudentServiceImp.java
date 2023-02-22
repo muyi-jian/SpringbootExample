@@ -34,4 +34,9 @@ public class StudentServiceImp implements StudentService {
     public Student queryStudentBySno(String sno) {
         return this.studentMapper.queryStudentBySno(sno);
     }
+
+    @Override
+    public int insertBo(String uuid) {
+        return this.studentMapper.insertBo(uuid);
+    }
 }

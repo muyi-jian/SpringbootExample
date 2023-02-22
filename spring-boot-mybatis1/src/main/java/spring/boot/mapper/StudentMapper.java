@@ -27,4 +27,7 @@ public interface StudentMapper {
             @Result(property = "sex", column = "ssex", javaType = String.class)
     })
     Student queryStudentBySno(String sno);
+
+    @Insert("insert into serial(serialnum) values(#{uuid})")
+    int insertBo(String uuid);
 }

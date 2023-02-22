@@ -1,6 +1,6 @@
 #MyBatis
 mybatis:
-  type-aliases-package: spring.boot.spring.boot.mapper
+  type-aliases-package: spring.boot.mapper.entity
   mapper-locations: classpath:spring.boot.mapper/*.xml
 #Spring
 spring:
