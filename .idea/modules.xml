@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-https/spring-boot-https.iml" filepath="$PROJECT_DIR$/spring-boot-https/spring-boot-https.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mongoDB/spring-boot-mongoDB.iml" filepath="$PROJECT_DIR$/spring-boot-mongoDB/spring-boot-mongoDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" filepath="$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" />

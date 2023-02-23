@@ -13,6 +13,7 @@
         <module name="spring-boot-redis" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-mybatis" />
+        <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-redis-jedis" />
         <module name="spring-boot-swagger3" />
         <module name="spring-boot-mybatis1" />
@@ -42,6 +43,7 @@
       <module name="spring-boot-JdbcTemplate" target="1.8" />
       <module name="spring-boot-mongoDB" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
+      <module name="spring-boot-mybatis-plus" target="1.8" />
       <module name="spring-boot-mybatis1" target="1.8" />
       <module name="spring-boot-redis" target="8" />
       <module name="spring-boot-redis-jedis" target="1.8" />
@@ -68,6 +70,7 @@
       <module name="spring-boot-https" options="-parameters" />
       <module name="spring-boot-mongoDB" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
+      <module name="spring-boot-mybatis-plus" options="-parameters" />
       <module name="spring-boot-mybatis1" options="-parameters" />
       <module name="spring-boot-redis" options="-parameters" />
       <module name="spring-boot-redis-jedis" options="-parameters" />
