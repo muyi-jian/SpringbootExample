@@ -31,6 +31,7 @@
         <option value="$PROJECT_DIR$/spring-boot-redis-jedis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mongoDB/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-quartz/pom.xml" />
       </list>
     </option>
   </component>

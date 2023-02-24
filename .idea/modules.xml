@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" filepath="$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" filepath="$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis-verification-code/spring-boot-redis-verification-code.iml" filepath="$PROJECT_DIR$/spring-boot-redis-verification-code/spring-boot-redis-verification-code.iml" />

@@ -25,6 +25,7 @@
         <module name="spring-boot-helloworld" />
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
+        <module name="spring-boot-quartz" />
         <module name="spring-boot-war" />
         <module name="spring-boot-mongoDB" />
         <module name="spring-boot-xmlandjson" />
@@ -45,6 +46,7 @@
       <module name="spring-boot-mybatis" target="1.8" />
       <module name="spring-boot-mybatis-plus" target="1.8" />
       <module name="spring-boot-mybatis1" target="1.8" />
+      <module name="spring-boot-quartz" target="1.8" />
       <module name="spring-boot-redis" target="8" />
       <module name="spring-boot-redis-jedis" target="1.8" />
       <module name="spring-boot-redis-verification-code" target="8" />
@@ -72,6 +74,7 @@
       <module name="spring-boot-mybatis" options="-parameters" />
       <module name="spring-boot-mybatis-plus" options="-parameters" />
       <module name="spring-boot-mybatis1" options="-parameters" />
+      <module name="spring-boot-quartz" options="-parameters" />
       <module name="spring-boot-redis" options="-parameters" />
       <module name="spring-boot-redis-jedis" options="-parameters" />
       <module name="spring-boot-redis-verification-code" options="-parameters" />
