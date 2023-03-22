@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-admin" />
-        <module name="spring-boot-admin-client" />
         <module name="spring-boot-config" />
+        <module name="spring-boot-admin-client" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-mybatis" />
@@ -17,19 +17,19 @@
         <module name="spring-boot-redis-jedis" />
         <module name="spring-boot-swagger3" />
         <module name="spring-boot-mybatis1" />
-        <module name="spring-boot-https" />
         <module name="spring-boot-swagger" />
-        <module name="spring-boot-email" />
+        <module name="spring-boot-https" />
         <module name="spring-boot-thymeleaf" />
+        <module name="spring-boot-email" />
         <module name="spring-boot-actuator" />
         <module name="spring-boot-helloworld" />
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-quartz" />
-        <module name="spring-boot-war" />
         <module name="spring-boot-mongoDB" />
-        <module name="spring-boot-xmlandjson" />
+        <module name="spring-boot-war" />
         <module name="spring-boot-redis-verification-code" />
+        <module name="spring-boot-xmlandjson" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -47,9 +47,9 @@
       <module name="spring-boot-mybatis-plus" target="1.8" />
       <module name="spring-boot-mybatis1" target="1.8" />
       <module name="spring-boot-quartz" target="1.8" />
-      <module name="spring-boot-redis" target="8" />
+      <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-redis-jedis" target="1.8" />
-      <module name="spring-boot-redis-verification-code" target="8" />
+      <module name="spring-boot-redis-verification-code" target="1.8" />
       <module name="spring-boot-servlet" target="1.8" />
       <module name="spring-boot-swagger" target="1.8" />
       <module name="spring-boot-swagger3" target="1.8" />
@@ -63,7 +63,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-JdbcTemplate" options="-parameters" />
       <module name="spring-boot-actuator" options="-parameters" />
-      <module name="spring-boot-admin" options="-parameters" />
+      <module name="spring-boot-admin" options="" />
       <module name="spring-boot-admin-client" options="-parameters" />
       <module name="spring-boot-config" options="-parameters" />
       <module name="spring-boot-devtools" options="-parameters" />

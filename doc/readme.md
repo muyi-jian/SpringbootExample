@@ -41,9 +41,9 @@ SpringBoot官方各个版本文档：https://docs.spring.io/spring-boot/docs
 - SpringBoot之Actuator监控
 - SpringBoot之Admin监控服务
 - SpringBoot之Redis
-- SpringBoot之
-- SpringBoot之
-- SpringBoot之
+- SpringBoot之mongoDB
+- SpringBoot之 MybatisPlus
+- SpringBoot之quartz
 - SpringBoot之
 - SpringBoot之
 - SpringBoot之
