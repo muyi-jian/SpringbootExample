@@ -3,29 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringbootExample.iml" filepath="$PROJECT_DIR$/.idea/SpringbootExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-JdbcTemplate/spring-boot-JdbcTemplate.iml" filepath="$PROJECT_DIR$/spring-boot-JdbcTemplate/spring-boot-JdbcTemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-actuator/spring-boot-actuator.iml" filepath="$PROJECT_DIR$/spring-boot-actuator/spring-boot-actuator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-admin/spring-boot-admin.iml" filepath="$PROJECT_DIR$/spring-boot-admin/spring-boot-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-admin-client/spring-boot-admin-client.iml" filepath="$PROJECT_DIR$/spring-boot-admin-client/spring-boot-admin-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-config/spring-boot-config.iml" filepath="$PROJECT_DIR$/spring-boot-config/spring-boot-config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-devtools/spring-boot-devtools.iml" filepath="$PROJECT_DIR$/spring-boot-devtools/spring-boot-devtools.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" filepath="$PROJECT_DIR$/spring-boot-email/spring-boot-email.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-helloworld/spring-boot-helloworld.iml" filepath="$PROJECT_DIR$/spring-boot-helloworld/spring-boot-helloworld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-https/spring-boot-https.iml" filepath="$PROJECT_DIR$/spring-boot-https/spring-boot-https.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mongoDB/spring-boot-mongoDB.iml" filepath="$PROJECT_DIR$/spring-boot-mongoDB/spring-boot-mongoDB.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus/spring-boot-mybatis-plus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis1/spring-boot-mybatis1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" filepath="$PROJECT_DIR$/spring-boot-quartz/spring-boot-quartz.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" filepath="$PROJECT_DIR$/spring-boot-redis-jedis/spring-boot-redis-jedis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-redis-verification-code/spring-boot-redis-verification-code.iml" filepath="$PROJECT_DIR$/spring-boot-redis-verification-code/spring-boot-redis-verification-code.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-servlet/spring-boot-servlet.iml" filepath="$PROJECT_DIR$/spring-boot-servlet/spring-boot-servlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" filepath="$PROJECT_DIR$/spring-boot-swagger/spring-boot-swagger.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-swagger3/spring-boot-swagger3.iml" filepath="$PROJECT_DIR$/spring-boot-swagger3/spring-boot-swagger3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-thymeleaf/spring-boot-thymeleaf.iml" filepath="$PROJECT_DIR$/spring-boot-thymeleaf/spring-boot-thymeleaf.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-war/spring-boot-war.iml" filepath="$PROJECT_DIR$/spring-boot-war/spring-boot-war.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-xmlandjson/spring-boot-xmlandjson.iml" filepath="$PROJECT_DIR$/spring-boot-xmlandjson/spring-boot-xmlandjson.iml" />
     </modules>
   </component>
 </project>

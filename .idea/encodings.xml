@@ -36,6 +36,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot-war/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot3-swagger/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
