@@ -40,13 +40,20 @@
         <option value="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-quartz/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot3-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-baisc-roleandauth/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-jdbc-yanzheng/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-vue/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://www.mybatis.org/dtd/mybatis-3-spring.boot.mapper.dtd" location="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="JDK17" project-jdk-type="JavaSDK" />
   <component name="SuppressionsComponent">
     <option name="suppComments" value="[]" />
   </component>

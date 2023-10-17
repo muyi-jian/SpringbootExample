@@ -7,19 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-admin" />
-        <module name="spring-boot-config" />
-        <module name="spring-boot-admin-client" />
-        <module name="spring-boot-redis" />
         <module name="spring-boot-JdbcTemplate" />
-        <module name="spring-boot-mybatis" />
         <module name="spring-boot-mybatis-plus" />
-        <module name="spring-boot-redis-jedis" />
-        <module name="spring-boot-swagger3" />
+        <module name="spring-boot-basic-jdbc-yanzheng" />
         <module name="spring-boot-mybatis1" />
-        <module name="spring-boot-swagger" />
-        <module name="spring-boot-https" />
-        <module name="spring-boot-thymeleaf" />
         <module name="spring-boot-email" />
         <module name="spring-boot-actuator" />
         <module name="spring-boot-helloworld" />
@@ -27,8 +18,24 @@
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-quartz" />
-        <module name="spring-boot-mongoDB" />
         <module name="spring-boot-war" />
+        <module name="spring-boot-basic-config" />
+        <module name="spring-boot-admin" />
+        <module name="spring-boot-config" />
+        <module name="spring-boot-admin-client" />
+        <module name="spring-boot-redis" />
+        <module name="spring-boot-mybatis" />
+        <module name="spring-boot-basic-jwt" />
+        <module name="spring-boot-redis-jedis" />
+        <module name="spring-boot-basic-vue" />
+        <module name="spring-boot-swagger3" />
+        <module name="spring-boot-swagger" />
+        <module name="spring-boot-https" />
+        <module name="spring-boot-thymeleaf" />
+        <module name="spring-boot-basic" />
+        <module name="spring-boot-basic-jdbc" />
+        <module name="spring-boot-baisc-roleandauth" />
+        <module name="spring-boot-mongoDB" />
         <module name="spring-boot-redis-verification-code" />
         <module name="spring-boot-xmlandjson" />
       </profile>
@@ -41,6 +48,12 @@
       <module name="spring-boot-actuator" options="-parameters" />
       <module name="spring-boot-admin" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />
+      <module name="spring-boot-baisc-roleandauth" options="-parameters" />
+      <module name="spring-boot-basic" options="-parameters" />
+      <module name="spring-boot-basic-config" options="-parameters" />
+      <module name="spring-boot-basic-jdbc" options="-parameters" />
+      <module name="spring-boot-basic-jdbc-yanzheng" options="-parameters" />
+      <module name="spring-boot-basic-vue" options="-parameters" />
       <module name="spring-boot-config" options="-parameters" />
       <module name="spring-boot-devtools" options="-parameters" />
       <module name="spring-boot-email" options="-parameters" />

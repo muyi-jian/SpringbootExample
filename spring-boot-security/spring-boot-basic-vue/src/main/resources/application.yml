@@ -1,0 +1,7 @@
+spring:
+  security:
+    user:
+      name: root
+      password: 123
+server:
+  port: 9002
