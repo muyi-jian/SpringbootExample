@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-jdbc-yanzheng/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-vue/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-result/pom.xml" />
       </list>
     </option>
   </component>

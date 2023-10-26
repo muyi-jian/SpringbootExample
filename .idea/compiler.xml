@@ -34,6 +34,7 @@
         <module name="spring-boot-thymeleaf" />
         <module name="spring-boot-basic" />
         <module name="spring-boot-basic-jdbc" />
+        <module name="spring-boot-result" />
         <module name="spring-boot-baisc-roleandauth" />
         <module name="spring-boot-mongoDB" />
         <module name="spring-boot-redis-verification-code" />

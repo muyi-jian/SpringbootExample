@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringbootExample.iml" filepath="$PROJECT_DIR$/.idea/SpringbootExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-security/spring-boot-baisc-roleandauth/spring-boot-baisc-roleandauth.iml" filepath="$PROJECT_DIR$/spring-boot-security/spring-boot-baisc-roleandauth/spring-boot-baisc-roleandauth.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" filepath="$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" />
     </modules>
   </component>
