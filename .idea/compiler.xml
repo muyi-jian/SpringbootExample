@@ -20,6 +20,7 @@
         <module name="spring-boot-quartz" />
         <module name="spring-boot-war" />
         <module name="spring-boot-basic-config" />
+        <module name="servlet-demo" />
         <module name="spring-boot-admin" />
         <module name="spring-boot-config" />
         <module name="spring-boot-admin-client" />
