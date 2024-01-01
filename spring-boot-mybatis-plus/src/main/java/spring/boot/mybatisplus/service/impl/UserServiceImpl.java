@@ -11,7 +11,6 @@ import spring.boot.mybatisplus.service.UserService;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
-    private final UserMapper userMapper;
 
     @Override
     public User selectByUsername(String username) {
