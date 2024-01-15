@@ -1,0 +1,20 @@
+2024-01-15 10:50:04.292  INFO [main] c.y.l.SpringBoot3LoggingApplication      :Starting SpringBoot3LoggingApplication using Java 17.0.5 with PID 9172 (D:\projectSpace\ideaLatest\SpringbootExample\springboot3\spring-boot-3-logging\target\classes started by yangjian in D:\projectSpace\ideaLatest\SpringbootExample)
+2024-01-15 10:50:04.302  INFO [main] c.y.l.SpringBoot3LoggingApplication      :No active profile set, falling back to 1 default profile: "default"
+2024-01-15 10:50:05.297  INFO [main] o.s.b.w.e.t.TomcatWebServer              :Tomcat initialized with port 8080 (http)
+2024-01-15 10:50:05.309  INFO [main] o.a.c.h.Http11NioProtocol                :Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-15 10:50:05.311  INFO [main] o.a.c.c.StandardService                  :Starting service [Tomcat]
+2024-01-15 10:50:05.311  INFO [main] o.a.c.c.StandardEngine                   :Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-15 10:50:05.361  INFO [main] o.a.c.c.C.[.[.[/]                        :Initializing Spring embedded WebApplicationContext
+2024-01-15 10:50:05.361  INFO [main] w.s.c.ServletWebServerApplicationContext :Root WebApplicationContext: initialization completed in 1009 ms
+2024-01-15 10:50:05.707  INFO [main] o.a.c.h.Http11NioProtocol                :Starting ProtocolHandler ["http-nio-8080"]
+2024-01-15 10:50:05.732  INFO [main] o.s.b.w.e.t.TomcatWebServer              :Tomcat started on port 8080 (http) with context path ''
+2024-01-15 10:50:05.740  INFO [main] c.y.l.SpringBoot3LoggingApplication      :Started SpringBoot3LoggingApplication in 2.091 seconds (process running for 3.042)
+2024-01-15 10:50:18.033  INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        :Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-15 10:50:18.034  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                :Initializing Servlet 'dispatcherServlet'
+2024-01-15 10:50:18.035  INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                :Completed initialization in 1 ms
+2024-01-15 10:50:18.065  INFO [http-nio-8080-exec-1] c.y.l.c.TestLogController                :ALL：打印所有日志
+2024-01-15 10:50:18.065  INFO [http-nio-8080-exec-1] c.y.l.c.TestLogController                :INFO：关键、感兴趣信息日志
+2024-01-15 10:50:18.065  WARN [http-nio-8080-exec-1] c.y.l.c.TestLogController                :WARN：警告但不是错误的信息日志，比如：版本过时
+2024-01-15 10:50:18.065 ERROR [http-nio-8080-exec-1] c.y.l.c.TestLogController                :ERROR：业务错误日志，比如出现各种异常
+2024-01-15 10:50:18.065  INFO [http-nio-8080-exec-1] c.y.l.c.TestLogController                :FATAL：致命错误日志，比如jvm系统崩溃
+2024-01-15 10:50:18.065  INFO [http-nio-8080-exec-1] c.y.l.c.TestLogController                :OFF：关闭所有日志记录

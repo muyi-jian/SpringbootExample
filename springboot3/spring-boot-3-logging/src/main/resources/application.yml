@@ -1,0 +1,9 @@
+# 修改日志输出格式
+logging:
+  config: classpath:log4j2-spring.xml
+  level:
+    root: info
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    path: /log/log.log

@@ -49,8 +49,14 @@
         <option value="$PROJECT_DIR$/spring-boot-security/spring-boot-basic-vue/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-result/pom.xml" />
         <option value="$PROJECT_DIR$/servlet-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-hello/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-springdoc/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-logging/pom.xml" />
       </list>
     </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectResources">
     <resource url="http://www.mybatis.org/dtd/mybatis-3-spring.boot.mapper.dtd" location="$PROJECT_DIR$" />

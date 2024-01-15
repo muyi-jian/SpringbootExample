@@ -55,6 +55,11 @@
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot3-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-hello/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-logging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-mybatis-plus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-springdoc/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
