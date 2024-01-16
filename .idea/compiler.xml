@@ -17,6 +17,7 @@
         <module name="spring-boot-3-hello" />
         <module name="spring-boot-helloworld" />
         <module name="spring-boot3-swagger" />
+        <module name="spring-boot-3-thymeleaf" />
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-quartz" />
@@ -58,6 +59,7 @@
       <module name="spring-boot-3-quartz" options="-parameters" />
       <module name="spring-boot-3-redis" options="-parameters" />
       <module name="spring-boot-3-springdoc" options="-parameters" />
+      <module name="spring-boot-3-thymeleaf" options="-parameters" />
       <module name="spring-boot-JdbcTemplate" options="-parameters" />
       <module name="spring-boot-actuator" options="-parameters" />
       <module name="spring-boot-admin" options="-parameters" />

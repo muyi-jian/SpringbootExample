@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h2>测试Th</h2>
+<!--编写一个table简单的表格-->
+    <table>
+        <thead>
+        <tr>
+            <th>关键字</th>
+            <th>功能介绍</th>
+            <th>案列</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="collect,rowStat : ${collects}">
+            <td th:text="${collect.keywords}">张三</td>
+            <td th:text="${collect.desc}">18</td>
+            <td th:text="${collect.example}">18</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
