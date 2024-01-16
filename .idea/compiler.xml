@@ -10,6 +10,7 @@
         <module name="spring-boot-3-mybatis-plus" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-mybatis-plus" />
+        <module name="spring-boot-3-properties" />
         <module name="spring-boot-basic-jdbc-yanzheng" />
         <module name="spring-boot-mybatis1" />
         <module name="spring-boot-email" />
@@ -56,6 +57,7 @@
       <module name="spring-boot-3-hello" options="-parameters" />
       <module name="spring-boot-3-logging" options="-parameters" />
       <module name="spring-boot-3-mybatis-plus" options="-parameters" />
+      <module name="spring-boot-3-properties" options="-parameters" />
       <module name="spring-boot-3-quartz" options="-parameters" />
       <module name="spring-boot-3-redis" options="-parameters" />
       <module name="spring-boot-3-springdoc" options="-parameters" />
