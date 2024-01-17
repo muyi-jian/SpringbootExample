@@ -55,9 +55,14 @@
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-xmlandjson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot3-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-admin-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-admin-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-hello/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-logging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-monitor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-mybatis-plus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-prometheus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-properties/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-quartz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-redis/src/main/java" charset="UTF-8" />

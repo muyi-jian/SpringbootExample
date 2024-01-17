@@ -18,10 +18,13 @@
         <module name="spring-boot-3-hello" />
         <module name="spring-boot-helloworld" />
         <module name="spring-boot3-swagger" />
+        <module name="spring-boot-3-actuator" />
         <module name="spring-boot-3-thymeleaf" />
         <module name="spring-boot-servlet" />
+        <module name="spring-boot-3-admin-client" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-quartz" />
+        <module name="spring-boot-3-prometheus" />
         <module name="spring-boot-war" />
         <module name="spring-boot-basic-config" />
         <module name="servlet-demo" />
@@ -36,6 +39,7 @@
         <module name="spring-boot-redis-jedis" />
         <module name="spring-boot-basic-vue" />
         <module name="spring-boot-swagger3" />
+        <module name="spring-boot-3-admin-server" />
         <module name="spring-boot-swagger" />
         <module name="spring-boot-https" />
         <module name="spring-boot-thymeleaf" />
@@ -54,9 +58,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-3-actuator" options="-parameters" />
+      <module name="spring-boot-3-admin-client" options="-parameters" />
+      <module name="spring-boot-3-admin-server" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
       <module name="spring-boot-3-logging" options="-parameters" />
       <module name="spring-boot-3-mybatis-plus" options="-parameters" />
+      <module name="spring-boot-3-prometheus" options="-parameters" />
       <module name="spring-boot-3-properties" options="-parameters" />
       <module name="spring-boot-3-quartz" options="-parameters" />
       <module name="spring-boot-3-redis" options="-parameters" />

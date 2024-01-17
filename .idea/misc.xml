@@ -57,7 +57,17 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-prometheus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-admin-client/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-admin-server/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-monitor/pom.xml" />
+      </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>

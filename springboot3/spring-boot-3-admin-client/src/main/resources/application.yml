@@ -1,0 +1,33 @@
+#设置端口
+server:
+  port: 8081
+spring:
+  application:
+    name: admin-client
+    ## spring boot admin
+  boot:
+    admin:
+      client:
+        #监控服务器地址 server端
+        url: http://localhost:8080/
+        username: admin # 服务器端配置登录账户
+        password: admin # 服务器端配置登录密码
+
+#配置可监控信息
+management:
+  #对外开放某个监控点
+  endpoint:
+    #health必须开
+    health:
+      show-details: always
+      enabled: true
+    #其他
+    beans:
+      enabled: true
+  endpoints:
+    #对web开启的监控点
+    web:
+      exposure:
+        include: "*"
+    #对外开放所有监控点
+    enabled-by-default: true
