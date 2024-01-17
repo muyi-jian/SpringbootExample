@@ -62,6 +62,9 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-prometheus/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-admin-client/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-admin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-logback/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-log-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-exception-handler/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

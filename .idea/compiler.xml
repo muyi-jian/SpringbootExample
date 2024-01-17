@@ -9,9 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-3-mybatis-plus" />
         <module name="spring-boot-JdbcTemplate" />
+        <module name="spring-boot-3-log-aop" />
         <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-3-properties" />
         <module name="spring-boot-basic-jdbc-yanzheng" />
+        <module name="spring-boot-3-exception-handler" />
         <module name="spring-boot-mybatis1" />
         <module name="spring-boot-email" />
         <module name="spring-boot-actuator" />
@@ -40,6 +42,7 @@
         <module name="spring-boot-basic-vue" />
         <module name="spring-boot-swagger3" />
         <module name="spring-boot-3-admin-server" />
+        <module name="spring-boot-3-logback" />
         <module name="spring-boot-swagger" />
         <module name="spring-boot-https" />
         <module name="spring-boot-thymeleaf" />
@@ -61,7 +64,10 @@
       <module name="spring-boot-3-actuator" options="-parameters" />
       <module name="spring-boot-3-admin-client" options="-parameters" />
       <module name="spring-boot-3-admin-server" options="-parameters" />
+      <module name="spring-boot-3-exception-handler" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
+      <module name="spring-boot-3-log-aop" options="-parameters" />
+      <module name="spring-boot-3-logback" options="-parameters" />
       <module name="spring-boot-3-logging" options="-parameters" />
       <module name="spring-boot-3-mybatis-plus" options="-parameters" />
       <module name="spring-boot-3-prometheus" options="-parameters" />
