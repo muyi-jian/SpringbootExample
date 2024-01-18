@@ -70,6 +70,10 @@
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-quartz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-springdoc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-template-beetl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-template-enjoy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-template-freemarker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-template-thymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-thymeleaf/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

@@ -65,11 +65,16 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-logback/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-log-aop/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-exception-handler/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-freemarker/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-beetl/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-enjoy/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-enjoy/pom.xml" />
       </set>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
