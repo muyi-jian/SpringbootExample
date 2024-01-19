@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-beetl/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-template-enjoy/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-orm-jdbctemplate/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -33,6 +33,7 @@
         <module name="spring-boot-3-logging" />
         <module name="spring-boot-redis-verification-code" />
         <module name="spring-boot-xmlandjson" />
+        <module name="spring-boot-3-jdbctemplate" />
         <module name="spring-boot-3-mybatis-plus" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-3-log-aop" />
@@ -71,6 +72,7 @@
       <module name="spring-boot-3-admin-server" options="-parameters" />
       <module name="spring-boot-3-exception-handler" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
+      <module name="spring-boot-3-jdbctemplate" options="-parameters" />
       <module name="spring-boot-3-log-aop" options="-parameters" />
       <module name="spring-boot-3-logback" options="-parameters" />
       <module name="spring-boot-3-logging" options="-parameters" />
