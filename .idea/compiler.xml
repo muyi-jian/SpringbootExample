@@ -39,6 +39,7 @@
         <module name="spring-boot-3-log-aop" />
         <module name="spring-boot-email" />
         <module name="spring-boot-actuator" />
+        <module name="spring-boot-3-jpa" />
         <module name="spring-boot3-swagger" />
         <module name="spring-boot-3-thymeleaf" />
         <module name="spring-boot-3-admin-client" />
@@ -73,6 +74,7 @@
       <module name="spring-boot-3-exception-handler" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
       <module name="spring-boot-3-jdbctemplate" options="-parameters" />
+      <module name="spring-boot-3-jpa" options="-parameters" />
       <module name="spring-boot-3-log-aop" options="-parameters" />
       <module name="spring-boot-3-logback" options="-parameters" />
       <module name="spring-boot-3-logging" options="-parameters" />
