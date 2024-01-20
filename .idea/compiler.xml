@@ -34,6 +34,7 @@
         <module name="spring-boot-redis-verification-code" />
         <module name="spring-boot-xmlandjson" />
         <module name="spring-boot-3-jdbctemplate" />
+        <module name="spring-boot-3-upload" />
         <module name="spring-boot-3-mybatis-plus" />
         <module name="spring-boot-JdbcTemplate" />
         <module name="spring-boot-3-log-aop" />
@@ -89,6 +90,7 @@
       <module name="spring-boot-3-template-freemarker" options="-parameters" />
       <module name="spring-boot-3-template-thymeleaf" options="-parameters" />
       <module name="spring-boot-3-thymeleaf" options="-parameters" />
+      <module name="spring-boot-3-upload" options="-parameters" />
       <module name="spring-boot-JdbcTemplate" options="-parameters" />
       <module name="spring-boot-actuator" options="-parameters" />
       <module name="spring-boot-admin" options="-parameters" />

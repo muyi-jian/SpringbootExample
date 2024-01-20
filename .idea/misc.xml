@@ -72,6 +72,7 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-orm-jdbctemplate/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-upload/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
