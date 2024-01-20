@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
  * 首页Controller
  * </p>
  *
- * @author yangkai.shen
- * @date Created in 2018-10-20 21:22
  */
 @Controller
 public class IndexController {

@@ -15,9 +15,6 @@ import java.util.Map;
  * 测试 Controller
  * </p>
  *
- * @author yangkai.shen
- * @author chen qi
- * @date Created in 2018-10-01 22:10
  */
 @Slf4j
 @RestController

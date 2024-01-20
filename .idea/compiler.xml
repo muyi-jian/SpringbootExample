@@ -18,6 +18,7 @@
         <module name="spring-boot-servlet" />
         <module name="spring-boot-devtools" />
         <module name="spring-boot-quartz" />
+        <module name="spring-boot-3-cache-redis" />
         <module name="spring-boot-basic-config" />
         <module name="spring-boot-admin" />
         <module name="spring-boot-3-springdoc" />
@@ -64,6 +65,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="spring-boot-3-cache" target="17" />
       <module name="spring-boot-3-template-enjoy" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -72,6 +74,8 @@
       <module name="spring-boot-3-actuator" options="-parameters" />
       <module name="spring-boot-3-admin-client" options="-parameters" />
       <module name="spring-boot-3-admin-server" options="-parameters" />
+      <module name="spring-boot-3-cache" options="-parameters" />
+      <module name="spring-boot-3-cache-redis" options="-parameters" />
       <module name="spring-boot-3-exception-handler" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
       <module name="spring-boot-3-jdbctemplate" options="-parameters" />
