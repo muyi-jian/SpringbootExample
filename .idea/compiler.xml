@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-3-email" />
         <module name="spring-boot-mybatis-plus" />
         <module name="spring-boot-3-properties" />
+        <module name="spring-boot-3-cache" />
         <module name="spring-boot-basic-jdbc-yanzheng" />
         <module name="spring-boot-3-exception-handler" />
         <module name="spring-boot-mybatis1" />
@@ -65,7 +67,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="spring-boot-3-cache" target="17" />
       <module name="spring-boot-3-template-enjoy" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -76,6 +77,7 @@
       <module name="spring-boot-3-admin-server" options="-parameters" />
       <module name="spring-boot-3-cache" options="-parameters" />
       <module name="spring-boot-3-cache-redis" options="-parameters" />
+      <module name="spring-boot-3-email" options="-parameters" />
       <module name="spring-boot-3-exception-handler" options="-parameters" />
       <module name="spring-boot-3-hello" options="-parameters" />
       <module name="spring-boot-3-jdbctemplate" options="-parameters" />

@@ -1,0 +1,12 @@
+spring:
+  mail:
+    # 你的邮箱，发邮件的邮箱
+    username: yangjian2628168@163.com
+    # 你的授权码，邮箱里面设置->POP3/SMTP/IMAP
+    password: OMPNJDPRLDGQAAUK
+    host: smtp.163.com
+
+# Logger Config
+logging:
+  level:
+    com.yj: debug
