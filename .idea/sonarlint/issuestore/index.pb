@@ -750,3 +750,15 @@ Mspringboot3/spring-boot-3-email/src/main/java/com/yj/email/util/MailUtil.java,
 Qspringboot3/spring-boot-3-email/src/main/java/com/yj/email/test/MailUtilTest.java,8\3\8338c8acfd07f0701fe7d5a8f086ee2f49da0723
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+X
+(springboot3/spring-boot-3-email/mvnw.cmd,6\e\6eaf10c9892762310122f9a04e1f459fe271e349
+Z
+*springboot3/spring-boot-3-email/.gitignore,c\7\c7875fc6762a280d6618962ad210f1903ecaf817
+T
+$springboot3/spring-boot-3-email/mvnw,d\a\dab6e1417ee032ff0bc0cc196e94ff6f99d616be
+ã
+[springboot3/spring-boot-3-email/src/main/java/com/yj/email/SpringBoot3EmailApplication.java,9\1\915fffd5d9ecc5584de851c38040da6187276dbc
+u
+Espringboot3/spring-boot-3-email/.mvn/wrapper/maven-wrapper.properties,a\3\a3c1f898ce912fab06799bda5851d8dc4d18c8df
+ê
+`springboot3/spring-boot-3-email/src/test/java/com/yj/email/SpringBoot3EmailApplicationTests.java,e\f\ef97eabd08f98c4da1f70dfb7190d0cd78618950
