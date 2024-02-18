@@ -28,6 +28,7 @@
         <module name="spring-boot-3-task-xxl-job" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-basic-jwt" />
+        <module name="spring-boot-3-rbac-security" />
         <module name="spring-boot-swagger3" />
         <module name="spring-boot-3-admin-server" />
         <module name="spring-boot-3-template-beetl" />
@@ -91,6 +92,7 @@
       <module name="spring-boot-3-prometheus" options="-parameters" />
       <module name="spring-boot-3-properties" options="-parameters" />
       <module name="spring-boot-3-quartz" options="-parameters" />
+      <module name="spring-boot-3-rbac-security" options="-parameters" />
       <module name="spring-boot-3-redis" options="-parameters" />
       <module name="spring-boot-3-springdoc" options="-parameters" />
       <module name="spring-boot-3-task" options="-parameters" />

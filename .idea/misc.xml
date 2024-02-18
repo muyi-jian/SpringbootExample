@@ -80,6 +80,7 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-task/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-xxl-job/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-task-xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-rbac-security/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
