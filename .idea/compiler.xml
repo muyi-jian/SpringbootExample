@@ -49,6 +49,7 @@
         <module name="spring-boot-3-jpa" />
         <module name="spring-boot3-swagger" />
         <module name="spring-boot-3-thymeleaf" />
+        <module name="spring-boot-3-social" />
         <module name="spring-boot-3-admin-client" />
         <module name="spring-boot-3-prometheus" />
         <module name="spring-boot-war" />
@@ -58,6 +59,7 @@
         <module name="spring-boot-admin-client" />
         <module name="spring-boot-3-template-freemarker" />
         <module name="spring-boot-redis" />
+        <module name="spring-boot-3-session" />
         <module name="spring-boot-redis-jedis" />
         <module name="spring-boot-basic-vue" />
         <module name="spring-boot-3-logback" />
@@ -94,6 +96,8 @@
       <module name="spring-boot-3-quartz" options="-parameters" />
       <module name="spring-boot-3-rbac-security" options="-parameters" />
       <module name="spring-boot-3-redis" options="-parameters" />
+      <module name="spring-boot-3-session" options="-parameters" />
+      <module name="spring-boot-3-social" options="-parameters" />
       <module name="spring-boot-3-springdoc" options="-parameters" />
       <module name="spring-boot-3-task" options="-parameters" />
       <module name="spring-boot-3-task-xxl-job" options="-parameters" />
