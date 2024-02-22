@@ -83,6 +83,9 @@
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-rbac-security/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-session/pom.xml" />
         <option value="$PROJECT_DIR$/springboot3/spring-boot-3-social/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-mq-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot3/spring-boot-3-async/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

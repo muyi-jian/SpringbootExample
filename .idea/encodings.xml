@@ -58,6 +58,7 @@
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-actuator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-admin-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-cache-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-email/src/main/java" charset="UTF-8" />
@@ -69,6 +70,7 @@
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-logback/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-logging/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-mq-rabbitmq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-mybatis-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-prometheus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-properties/src/main/java" charset="UTF-8" />
@@ -86,6 +88,7 @@
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-template-thymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-thymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-upload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot3/spring-boot-3-zookeeper/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
