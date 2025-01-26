@@ -1,9 +1,0 @@
-server:
-  port: 8080
-  ssl:
-    protocol: TLS
-    key-store: classpath:test.keystore
-    key-store-password: 123456
-    key-store-type: JKS
-http:
-  port: 8081

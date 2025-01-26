@@ -1,7 +1,0 @@
-spring:
-  servlet:
-    multipart:
-      enabled: true
-      location: D:/DOCS
-      file-size-threshold: 5MB
-      max-file-size: 20MB

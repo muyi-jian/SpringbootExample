@@ -1,6 +1,0 @@
-spring:
-  task:
-    scheduling:
-      pool:
-        size: 20
-      thread-name-prefix: Job-Thread-

@@ -1,4 +1,0 @@
-#spring:
-#  jackson:
-#    # 全局设置@JsonFormat的格式pattern
-#    date-format: yyyy-MM-dd HH:mm:ss
