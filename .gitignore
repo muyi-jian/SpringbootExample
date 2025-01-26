@@ -27,3 +27,6 @@ replay_pid*
 .idea/
 
 .logs/
+/spring-boot3-hello/mvnw
+/spring-boot3-hello/mvnw.cmd
+/spring-boot3-hello/.gitattributes
