@@ -2,9 +2,8 @@
 
 此教程是一个用来学习并实战 `spring boot` 的项目，帮助初学者快速掌握 Spring Boot 各组件的使用。
 
-### 本项目中所有示例均已经包含到 Spring Boot 2.0，Spring Boot 3.0,版本。
+### 本项目中所有示例均为Spring Boot 3.0,版本。
 
-- Spring Boot 2.X 系列示例代码目录格式：[spring-boot2-xx]
 - Spring Boot 3.X 系列示例代码目录格式：[spring-boot3-xx]
 
 ### 示例代码
@@ -45,15 +44,11 @@
 
 以下版本只是代码演示版本
 
-- **SpringBoot 2.x**
-    - **JDK 1.8 +**
-    - **Maven 3.5 +**
-    - **IntelliJ IDEA 2023.1** (*注意：务必使用 IDEA 开发，同时保证安装 `lombok` 插件*)
-    - **Mysql 5.7 +**
+
 - **SpringBoot 3.x**
     - **JDK17+**
-    - **Maven 3.5 +**
-    - **IntelliJ IDEA 2023.1 ** (*注意：务必使用 IDEA 开发，同时保证安装 `lombok` 插件*)
+    - **Maven 3.9.9 +**
+    - **IntelliJ IDEA 2024.3 ** (*注意：务必使用 IDEA 开发，同时保证安装 `lombok` 插件*)
     - **Mysql 5.7 +**
 
 ### 部署到IDEA

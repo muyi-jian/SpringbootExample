@@ -1,0 +1,58 @@
+plugins {
+    id 'java'  // 应用Java插件，启用Java编译功能
+    id 'org.springframework.boot' version '3.4.4'  // 应用Spring Boot插件，指定Spring Boot版本
+    id 'io.spring.dependency-management' version '1.1.7'  // 应用Spring的依赖管理插件，简化依赖版本管理
+    id 'org.asciidoctor.jvm.convert' version '3.3.2'  // 应用Asciidoctor插件，用于生成文档
+}
+
+group = 'com.yj' // 定义项目的组ID
+version = '0.0.1-SNAPSHOT'  // 定义项目版本
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)  // 设置Java工具链，使用Java 17版本
+    }
+}
+
+configurations {
+    compileOnly {  // 定义一个编译时只存在的配置
+        extendsFrom annotationProcessor   // 扩展为依赖处理器
+    }
+}
+
+repositories {
+    mavenCentral()  // 指定使用Maven中央仓库管理依赖
+}
+
+ext {
+    set('snippetsDir', file("build/generated-snippets"))  // 定义生成的代码片段目录
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'  // 添加Spring Boot Actuator依赖，以支持应用监控
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'  // 添加Spring Data JPA依赖，以支持JPA功能
+//    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'  // 添加Spring Data MongoDB依赖，以支持MongoDB
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis'  // 添加Spring Data Redis依赖，以支持Redis
+//    implementation 'org.springframework.boot:spring-boot-starter-security'  // 添加Spring Security依赖，以支持安全功能
+    implementation 'org.springframework.boot:spring-boot-starter-web'  // 添加Spring Web依赖，以支持Web功能
+//    implementation 'org.springframework.boot:spring-boot-starter-websocket'  // 添加WebSocket支持
+    compileOnly 'org.projectlombok:lombok'  // 添加Lombok依赖，仅在编译时使用
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'  // 添加开发工具依赖，仅在开发环境中使用
+//    runtimeOnly 'com.mysql:mysql-connector-j'  // 添加MySQL连接器，仅在运行时需要
+    annotationProcessor 'org.projectlombok:lombok'  // 添加Lombok注解处理器
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'  // 添加Spring Boot测试依赖
+//    testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'  // 添加Spring REST Docs以生成API文档
+//    testImplementation 'org.springframework.security:spring-security-test'  // 添加Spring Security测试支持
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'  // 添加JUnit平台测试支持
+}
+
+tasks.named('test') {
+    outputs.dir snippetsDir  // 将生成的代码片段的输出目录设置为snippetsDir
+    useJUnitPlatform()  // 使用JUnit平台
+}
+
+tasks.named('asciidoctor') {
+    inputs.dir snippetsDir  // 将snippetsDir作为输入目录
+    dependsOn test  // 确保在生成文档前执行测试
+}
