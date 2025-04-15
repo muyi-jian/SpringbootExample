@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.4.4'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.yj'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'  // 添加Spring Boot Actuator依赖，以支持应用监控
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation 'io.micrometer:micrometer-registry-prometheus:1.14.5' // 用于导出prometheus系统类型的指标数据
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.micrometer:micrometer-tracing'
+    implementation 'io.micrometer:micrometer-tracing-bridge-otel' // 将 Micrometer Observation API 桥接到 OpenTelemetry
+//    implementation 'io.opentelemetry:opentelemetry-exporter-zipkin' // 向 Zipkin 报告调用连跟踪信息
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

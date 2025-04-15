@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: spring-boot3-actuator
+  # 配置登录springboot admin管理端的账号密码
+  security:
+    user:
+      name: admin
+      password: 123456
+      roles: ADMIN
+
+  reactor:
+    context-propagation: auto
+logging:
+  pattern:
+    level: ${spring.application.name:},%X{traceId:-},%X{spanId:-}
+info:
+  app:
+    name: My Spring Boot App
+    version: 1.0.0
+    description: This is a demo application
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        pushgateway:
+          enabled: true
+        step: 30s # 推送间隔
+  info:
+    env:
+      enabled: true
+  security:
+    enabled: true   # 启用安全性
+
+  metrics:
+    enable:
+      jvm: true # 自动启用
+
+    tags:
+      application: spring-boo3-actuator #配置应用名称（作为指标前缀）
+
+  observations:
+    key-values:
+      application: ${spring.application.name}
