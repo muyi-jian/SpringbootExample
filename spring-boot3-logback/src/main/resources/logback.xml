@@ -8,11 +8,7 @@
         debug
             当此属性设置为 true 时，将打印出 logback 内部日志信息，实时查看 logback 运行状态。默认值为 false
 -->
-<configuration scan="true" scanPeriod="60 seconds" debug="true" xmlns="http://ch.qos.logback/xml/ns/logback"
-               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback
-                https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
-
+<configuration scan="true" scanPeriod="60 seconds" debug="true" >
     <!-- property 节点用来定义变量值，可以通过 ${} 来使用变量 -->
     <property name="LOG_PATH" value="${LOG_PATH:-logs/${spring.application.name:-default}}"/>
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>
