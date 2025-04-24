@@ -1,0 +1,144 @@
+<!--
+    configuration 根节点
+        scan
+            当该属性设置为 true 时，配置文件如果发生改变，将会被重新加载，默认值: true
+        scanPeriod
+            监测 配置文件是否有修改 的时间间隔，如果没有给出时间单位，默认单位是毫秒
+            当 scan 为 true 时，此属性生效。默认的时间间隔为 "1 minute"，或者设为 "60 seconds"
+        debug
+            当此属性设置为 true 时，将打印出 logback 内部日志信息，实时查看 logback 运行状态。默认值为 false
+-->
+<configuration scan="true" scanPeriod="60 seconds" debug="true" xmlns="http://ch.qos.logback/xml/ns/logback"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback
+                https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
+
+    <!-- property 节点用来定义变量值，可以通过 ${} 来使用变量 -->
+    <property name="LOG_PATH" value="${LOG_PATH:-logs/${spring.application.name:-default}}"/>
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>
+
+
+    <!--
+        appender 子节点：负责写日志的组件
+            name
+                指定 appender 的名称
+            class
+                指定 appender 全限定名，有以下几种：
+                ConsoleAppender：日志输出到控制台，类名 ch.qos.logback.core.ConsoleAppender
+                FileAppender：日志输入到文件，类名 ch.qos.logback.core.FileAppender
+                RollingFileAppender：滚动记录文件，FileAppender 的子类，当符合条件（大小、时间），日志进行切分处理
+                    类名：ch.qos.logback.core.rolling.RollingFileAppender
+    -->
+    <!-- 公共 RollingFileAppender 配置 -->
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/app.log</file>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/app.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>200MB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <!-- 异步日志 -->
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="ROLLING_FILE"/>
+        <!-- 异步队列大小，默认 256 -->
+        <queueSize>512</queueSize>
+        <!-- 永不丢弃日志 -->
+        <discardingThreshold>0</discardingThreshold>
+    </appender>
+
+    <!-- 控制台输出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- INFO 日志 -->
+    <appender name="INFO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--
+            级别过滤器
+            DENY：日志将立即被抛弃不再经过其他过滤器
+            NEUTRAL：有序列表里的下个过滤器过接着处理日志，该级别既不处理，也不抛弃，日志会被保存下来并在本 appender 被执行
+            ACCEPT：日志会被立即处理，不再经过剩余过滤器
+        -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 只保留 INFO 级别的日志 -->
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${LOG_PATH}/info.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/info.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- WARN 日志 -->
+    <appender name="WARN_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${LOG_PATH}/warn.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/warn.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- ERROR 日志 -->
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${LOG_PATH}/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- 配置日志输出，根据当前 ROOT 级别，日志输出时，级别高于 ROOT 默认的级别时会输出  -->
+    <!-- 日志等级从大到小排列：ERROR > WARN > INFO > DEBUG > TRACE   -->
+    <root level="INFO">
+        <!-- 添加 appender 节点到 root 标签下 -->
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ASYNC_FILE"/>
+
+    </root>
+
+    <!--
+        logger 标签：用来设置某一个包或者具体的某一个类的日志打印级别
+            name 属性：用来指定受此 logger 约束的某一个包或某一个类
+            level 属性：用来设置打印级别，若为设置此属性，当前 logger 将会继承上级（root）的级别
+            additivity 属性：是否向上级传递打印信息，默认 true
+    -->
+    <!--
+        控制 org.springframework 包下的所有类的 INFO 级别及以上的日志打印
+        没有设置 appender，此 logger 本身不打印任何信息
+        没有设置 additivity，默认 true，此 logger 的日志信息向上级（ROOT）传递
+        ROOT 接到下级传递的信息，交给挂载的 appender-ref（有三个）进行打印输出
+    -->
+    <logger name="org.springframework" level="INFO"/>
+
+    <!-- 自定义 Logger -->
+    <!-- <logger name="com.example.custom" level="DEBUG" additivity="false"> -->
+    <!--     <appender-ref ref="INFO_FILE"/> -->
+    <!-- </logger> -->
+
+</configuration>
