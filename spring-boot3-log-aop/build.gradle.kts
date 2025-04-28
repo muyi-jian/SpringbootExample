@@ -21,7 +21,7 @@ dependencies {
     implementation("eu.bitwalker:UserAgentUtils:1.21") // 解析 UserAgent 信息
     implementation("com.alibaba:fastjson:2.0.53") // JSON 解析
     implementation("cn.hutool:hutool-all:5.8.37")
-
+    implementation("commons-lang:commons-lang:2.6")
 
 }
 
