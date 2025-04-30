@@ -9,8 +9,8 @@ spring:
   mail:
     host: smtp.163.com # 发件服务器地址,不同邮件平台地址不同
     #port: 25 #常用邮件端口25、109、110、143、465、995、993、994 如果开启了SSL安全则使用对应的端口号，25为非加密端口号
-    username: yangjian2628168@163.com #发送邮件的账号
-    password: OMPNJDPRLDGQAAUK #发送邮件账号的授权码,这里的授权码不是验证码.需要到邮箱
+    username: 123@163.com #发送邮件的账号
+    password:  xx #发送邮件账号的授权码,这里的授权码不是验证码.需要到邮箱
     default-encoding: utf-8 #设置编码
     properties: # 设置邮件超时时间防止服务器阻塞
       timeout: 5000
@@ -31,4 +31,4 @@ spring:
 
 mail:
   fromMail:
-    addr: yangjian2628168@163.com
+    addr: 123@163.com
