@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>邮件发送测试</title>
+</head>
+<body>
+    <form th:action="@{/submitForm}"  method="post" enctype="multipart/form-data">
+        <label for="toUser">收件人:</label>
+        <input type="email" id="toUser" name="toUser" /><br>
+
+        <label for="subject">主题:</label>
+        <input type="text" id="subject" name="subject" /><br>
+
+        <label for="content">内容:</label>
+        <input type="text" id="content" name="content" /><br>
+
+        <label for="file">附件:</label>
+        <input type="file"  id="file" name="file"><br>
+        <input type="submit" value="Submit" /><br>
+    </form>
+</body>
+</html>

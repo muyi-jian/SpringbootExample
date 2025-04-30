@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[[${title}]]</title>
+    <style>
+        .email-container {
+            width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 14px;
+            font-family: "Microsoft Yahei", SimHei, sans-serif;
+            line-height: 1.5;
+            box-shadow: rgb(153, 153, 153) 0 0 5px;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .header {
+            height: 25px;
+            line-height: 25px;
+            padding: 15px 35px;
+            border-bottom: 1px solid #42a3d3;
+            background-color: #49bcff;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: white;
+            font-size: 18px;
+        }
+        .content {
+            padding: 25px 35px 40px;
+            background-color: #fff;
+        }
+        .footer {
+            padding: 10px 10px 0;
+            border-top: 1px solid #ccc;
+            color: #747474;
+            font-size: 12px;
+            line-height: 1.3em;
+        }
+        h2 {
+            margin: 5px 0;
+            color: #333;
+            line-height: 22px;
+            font-size: 18px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        b.code {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color:#ECECEC; padding: 15px;">
+    <table class="email-container">
+        <tbody>
+        <tr>
+            <th class="header">测试邮件</th>
+        </tr>
+        <tr>
+            <td class="content">
+                <h2>亲爱的<b>[[${email}]]</b>用户，您好：</h2>
+                <p>首先感谢您加入【FCH平台】！请在验证页面输入以下验证码:<br>
+                    <b class="code">[[${code}]]</b><br>
+                    本验证码5分钟内有效，为了保障您的账户安全，请勿向任何人提供此验证码。感谢您的支持!<br>
+                    如果您有什么疑问可以联系管理员，Email: admin@fincodehub.com</p>
+                <p align="right">FCH平台</p>
+                <p align="right">[[${date}]]</p>
+                <div style="width:700px;margin:0 auto;">
+                    <div class="footer">
+                        <p>本邮件系统自动发送，请勿回复!<br>
+                            请保管好您的邮箱，避免账号被他人盗用
+                        </p>
+                        <p>©FCH平台</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
