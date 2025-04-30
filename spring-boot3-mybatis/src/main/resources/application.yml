@@ -1,0 +1,35 @@
+# 配置数据库连接
+spring:
+  datasource:
+    # 数据库连接驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据源类型： 默认的是 Hikari
+    type: com.zaxxer.hikari.HikariDataSource
+    # 数据库连接地址
+    url: jdbc:mysql://localhost:3306/springboot3?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    # 数据库连接用户名
+    username: root
+    # 数据库连接密码
+    password: 123456
+
+
+# mybatis 的配置
+mybatis:
+  # 配置 mybatis 的xml文件的扫描路径
+  mapper-locations: classpath:mybatis/**/*.xml
+  # 配置实体类的扫描路径
+  type-aliases-package: com.fincodehub.mybatis
+  configuration:
+    # 开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 开启日志
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+# 指定日志级别 : 对mybatis的日志输出
+logging:
+  level:
+    com.fincodehub.mybatis: debug
+    org.apache.ibatis: debug
+
+
+
