@@ -18,11 +18,12 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     implementation("org.springframework.boot:spring-boot-starter-aop")
-    implementation("org.springframework.security:spring-security-core")
     implementation("eu.bitwalker:UserAgentUtils:1.21") // 解析 UserAgent 信息
     implementation("com.alibaba:fastjson:2.0.53") // JSON 解析
     implementation("cn.hutool:hutool-all:5.8.37")
     implementation("commons-lang:commons-lang:2.6")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("mysql:mysql-connector-java:8.0.33")
 
 }
 
