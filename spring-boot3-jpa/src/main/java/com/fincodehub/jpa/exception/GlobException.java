@@ -1,4 +1,4 @@
-package com.fincodehub.jpa.controller.exception;
+package com.fincodehub.jpa.exception;
 
 
 import org.springframework.dao.OptimisticLockingFailureException;

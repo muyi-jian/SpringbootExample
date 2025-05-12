@@ -2,6 +2,7 @@ package com.fincodehub.jpa.controller;
 
 
 import com.fincodehub.jpa.entity.User;
+import com.fincodehub.jpa.service.AuditorAwareService;
 import com.fincodehub.jpa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    AuditorAwareService auditorAwareService;
 
     @GetMapping("/users")
     public List<User> getAllUsers() {
@@ -47,9 +51,19 @@ public class UserController {
     public void updateYourEntity(@RequestBody User user) throws InterruptedException {
         User entity = userService.findById(user.getId());
         System.out.println(entity.toString());
-        Thread.sleep(9000);
+        Thread.sleep(9000);//睡眠9秒，模拟数据被修改
         entity.setUsername(user.getUsername());
 
         userService.save(entity); // 这里会触发乐观锁检查  保存实体，JPA会检查版本号
+    }
+
+    @GetMapping("/tu")
+    public void testAuditDate(){
+        auditorAwareService.testAuditDate();
+    }
+    @GetMapping("/tu1")
+
+    public void testAuditUser() {
+        auditorAwareService.testAuditUser();
     }
 }
