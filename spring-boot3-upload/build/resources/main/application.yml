@@ -1,0 +1,15 @@
+# 启用文件上传支持
+spring:
+  servlet:
+    multipart: # 修改文件上传的大小限制
+      enabled: true # 表示开启Spring MVC的文件上传功能，这是使用MultipartFile接收文件的前置条件
+      max-file-size: 10MB # 限制单个文件最大为10MB（超过会抛出MaxUploadSizeExceededException
+      max-request-size: 10MB # 限制整个HTTP请求（含多文件+表单数据）最大为10MB48（注意：两者单位支持KB/MB/GB，若设为-1表示无限制）
+  profiles:
+    active: local # 默认激活 local 环境
+
+
+logging:
+  level:
+    root: info # 表示整个应用的默认日志级别为INFO
+    com.fincodehub.upload.controller: debug # 表示 com.fincodehub.upload.controller 包下的日志级别为DEBUG

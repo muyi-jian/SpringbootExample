@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>文件上传</title>
+</head>
+<body>
+<!-- 单文件上传（HttpServletRequest） -->
+<form th:action="@{/upload/request}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">上传（HttpServletRequest）</button>
+</form>
+
+<!-- 单文件上传（MultipartFile） -->
+<form th:action="@{/upload/multipart}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">上传（MultipartFile）</button>
+</form>
+
+<!-- 单文件上传（Part） -->
+<form th:action="@{/upload/part}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">上传（Part）</button>
+</form>
+
+<!-- 多文件上传（MultipartFile） -->
+<form th:action="@{/upload/multi/multipart}" method="post" enctype="multipart/form-data">
+    <input type="file" name="files" multiple />
+    <button type="submit">上传多文件（MultipartFile）</button>
+</form>
+</body>
+</html>
