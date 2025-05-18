@@ -1,0 +1,5 @@
+# 指定本地上传位置
+file:
+  upload:
+    dir: D:\temp\uploads\ # 指定本地测试上传目录 (Windows系统)
+

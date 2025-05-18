@@ -1,0 +1,5 @@
+# 关闭SpringBoot自带调度器
+#spring:
+#  task:
+#    scheduling:
+#      enabled: false

@@ -1,0 +1,4 @@
+# 指定本地上传位置
+file:
+  upload:
+    dir: /home/user/uoloads # 指定服务器测试上传目录（Linux系统）

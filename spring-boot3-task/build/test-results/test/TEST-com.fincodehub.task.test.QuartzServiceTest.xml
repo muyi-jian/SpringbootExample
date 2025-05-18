@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fincodehub.task.test.QuartzServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-17T16:15:11.832Z" hostname="YANGJIAN" time="8.039">
+  <properties/>
+  <testcase name="testJobLifecycle()" classname="com.fincodehub.task.test.QuartzServiceTest" time="8.039"/>
+  <system-out><![CDATA[00:15:11.813 [Test worker] INFO org.quartz.impl.StdSchedulerFactory -- Using default implementation for ThreadExecutor
+00:15:11.818 [Test worker] INFO org.quartz.simpl.SimpleThreadPool -- Job execution threads will use class loader of thread: Test worker
+00:15:11.828 [Test worker] INFO org.quartz.core.SchedulerSignalerImpl -- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+00:15:11.828 [Test worker] INFO org.quartz.core.QuartzScheduler -- Quartz Scheduler v.2.3.2 created.
+00:15:11.829 [Test worker] INFO org.quartz.simpl.RAMJobStore -- RAMJobStore initialized.
+00:15:11.830 [Test worker] INFO org.quartz.core.QuartzScheduler -- Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+00:15:11.830 [Test worker] INFO org.quartz.impl.StdSchedulerFactory -- Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+00:15:11.830 [Test worker] INFO org.quartz.impl.StdSchedulerFactory -- Quartz scheduler version: 2.3.2
+00:15:11.830 [Test worker] INFO org.quartz.core.QuartzScheduler -- Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+Job add  scheduled
+Job executed at: Sun May 18 00:15:11 CST 2025
+Job executed at: Sun May 18 00:15:12 CST 2025
+Job executed at: Sun May 18 00:15:13 CST 2025
+Job paused: group1.testJob
+Job executed at: Sun May 18 00:15:14 CST 2025
+Job paused for 2 seconds
+Job resumed: group1.testJob
+Job resumed
+Job executed at: Sun May 18 00:15:16 CST 2025
+Job executed at: Sun May 18 00:15:16 CST 2025
+Job executed at: Sun May 18 00:15:17 CST 2025
+Job executed at: Sun May 18 00:15:18 CST 2025
+Job executed at: Sun May 18 00:15:19 CST 2025
+Job deleted: group1.testJob
+Job deleted
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
