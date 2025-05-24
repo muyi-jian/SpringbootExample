@@ -15,24 +15,41 @@ repositories {
 // 正确打开姿势，引入 mybatis-plus-bom 模块，然后引入 ..starter和 ..jsqlparser.. 依赖
 
 
+
+dependencyManagement {
+    imports {
+        mavenBom("com.baomidou:mybatis-plus-bom:3.5.11")
+    }
+}
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.springframework.boot:spring-boot-starter-web")
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
-    implementation("org.springframework.boot:spring-boot-starter-aop")
-    implementation("eu.bitwalker:UserAgentUtils:1.21") // 解析 UserAgent 信息
-    implementation("com.alibaba:fastjson:2.0.53") // JSON 解析
-    implementation("cn.hutool:hutool-all:5.8.37")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("commons-lang:commons-lang:2.6")
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-    implementation("org.springframework.boot:spring-boot-starter-test")
-    implementation("org.apache.shiro:shiro-spring:2.0.4")
     implementation("mysql:mysql-connector-java:8.0.33")
     implementation("com.baomidou:mybatis-plus-spring-boot3-starter")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("com.baomidou:mybatis-plus-jsqlparser")
+//    implementation("org.apache.shiro:shiro-spring-boot-starter:2.0.2:jakarta")
+
+    implementation("org.apache.shiro:shiro-spring-boot-starter:2.0.4:jakarta") {
+        exclude(group = "org.apache.shiro", module = "shiro-crypto-cipher")
+        exclude(group = "org.apache.shiro", module = "shiro-crypto-hash")
+        exclude(group = "org.apache.shiro", module = "shiro-web")
+        exclude(group = "org.apache.shiro", module = "shiro-spring")
+    }
+    implementation("org.apache.shiro:shiro-web:2.0.4:jakarta")
+    implementation("org.apache.shiro:shiro-spring:2.0.4:jakarta") {
+        exclude(group = "org.apache.shiro", module = "shiro-web")
+    }
+    implementation("com.github.theborakompanioni:thymeleaf-extras-shiro:2.1.0")
+    implementation("net.sf.ehcache:ehcache:2.10.9.2")
+    implementation("org.apache.shiro:shiro-ehcache:2.0.4")
+    implementation("commons-io:commons-io:2.19.0")
 }
+
 
 tasks.test {
     useJUnitPlatform()

@@ -1,10 +1,9 @@
 package com.fincodehub.shiro;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author YangJian
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @description <TODO description class purpose>
  */
 @SpringBootApplication
+@MapperScan("com.fincodehub.shiro.mapper")
 public class ShiroApplication {
     public static void main(String[] args) {
         SpringApplication.run(ShiroApplication.class, args);
