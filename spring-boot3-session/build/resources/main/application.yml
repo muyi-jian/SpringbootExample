@@ -1,0 +1,18 @@
+spring:
+  data:
+    redis:
+      host: 192.168.43.15
+      port: 6379            # Redis 端口
+      password: 123456            # 如果有密码可以在这里配置
+      lettuce:
+        pool:
+          max-active: 100    # 最大并发连接数
+          max-idle: 50       # 最大空闲连接数
+          min-idle: 10       # 最小空闲连接数
+  session:
+    redis:
+      namespace: "fincodehub:session"   # 定义存储在 Redis 中的 session 数据的命名空间
+      flush-mode: on_save             # 每次保存或更新 session 时立即将数据同步到 Redis
+      save-mode: always               # 每次请求结束时都保存 session
+
+

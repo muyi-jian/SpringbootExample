@@ -50,6 +50,7 @@
 - **SpringBoot 3.x**
     - **JDK17+**
     - **Maven 3.9.9 +**
+    - **Gradle 13**
     - **IntelliJ IDEA 2024.3 ** (*注意：务必使用 IDEA 开发，同时保证安装 `lombok` 插件*)
     - **Mysql 5.7 +**
 
