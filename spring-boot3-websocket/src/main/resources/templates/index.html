@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket测试</title>
+</head>
+<body>
+<div>
+    <h2>WebSocket测试页面</h2>
+    <div>
+        <input type="text" id="messageInput" placeholder="输入消息">
+        <button onclick="sendMessage()">发送</button>
+    </div>
+    <div id="messages" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+    let ws = null;
+
+    function connect() {
+        ws = new WebSocket('ws://localhost:8080/websocket');
+
+        ws.onopen = function() {
+            console.log('WebSocket连接已建立');
+            appendMessage('系统消息：连接已建立');
+        };
+
+        ws.onmessage = function(event) {
+            appendMessage('收到消息：' + event.data);
+        };
+
+        ws.onclose = function() {
+            console.log('WebSocket连接已关闭');
+            appendMessage('系统消息：连接已关闭');
+        };
+
+        ws.onerror = function(error) {
+            console.error('WebSocket错误：', error);
+            appendMessage('系统消息：连接发生错误');
+        };
+    }
+
+    function sendMessage() {
+        const messageInput = document.getElementById('messageInput');
+        const message = messageInput.value;
+
+        if (ws && message) {
+            ws.send(message);
+            appendMessage('发送消息：' + message);
+            messageInput.value = '';
+        }
+    }
+
+    function appendMessage(message) {
+        const messagesDiv = document.getElementById('messages');
+        const messageElement = document.createElement('div');
+        messageElement.textContent = message;
+        messagesDiv.appendChild(messageElement);
+    }
+
+    // 页面加载完成后连接WebSocket
+    window.onload = connect;
+</script>
+</body>
+</html>
