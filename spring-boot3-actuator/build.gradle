@@ -35,6 +35,7 @@ dependencies {
     implementation 'io.micrometer:micrometer-tracing'
     implementation 'io.micrometer:micrometer-tracing-bridge-otel' // 将 Micrometer Observation API 桥接到 OpenTelemetry
 //    implementation 'io.opentelemetry:opentelemetry-exporter-zipkin' // 向 Zipkin 报告调用连跟踪信息
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 }
 
 tasks.named('test') {

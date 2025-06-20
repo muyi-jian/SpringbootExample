@@ -17,4 +17,9 @@ public class User {
     private Integer id;
     private String name;
     private Integer age;
+
+    public User(Long id, String name) {
+        this.id = id.intValue();
+        this.name = name;
+    }
 }

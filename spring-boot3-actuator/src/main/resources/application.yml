@@ -10,6 +10,35 @@ spring:
 
   reactor:
     context-propagation: auto
+
+  data:
+    redis:
+      # 改为自己的地址和密码
+      host: 192.168.43.15
+      port: 6379
+      password: 123456
+      # 连接超时时间,单位ms
+      connect-timeout: 50000
+      # 选择第几个数据库，默认为0,最大值15
+      database: 0
+      lettuce:
+        pool:
+          # 最大的活跃连接数，不会超过这个数，根据项目预期并发量调整
+          max-active: 50
+          # max-idle 指定了连接池中的最大空闲连接数。
+          # 空闲连接是指那些没有被使用，但是已经创建并且保持在连接池中的连接
+          # 这个值应该与max-active相匹配或者稍微低一些，
+          # 以保持连接池中有足够的空闲连接来处理突发请求。
+          # 设置得太高可能会导致资源浪费，因为空闲连接会占用内存和其他资源。
+          max-idle: 30
+          #这个配置指定了连接池中的最小空闲连接数。
+          #这个设置可以确保连接池始终保持一定数量的空闲连接，以便在请求到来时可以立即使用，而不需要等待连接的创建。
+          # 这个值应该根据你的应用程序的基线负载来设置
+          min-idle: 10
+          # 当连接池达到最大活跃连接数时，客户端等待可用连接的最大时间（以毫秒为单位）。-1 表示无限等待
+          # 如果设置为一个正数，那么在等待时间超过这个值后，会抛出一个异常。
+          max-wait: -1
+
 logging:
   pattern:
     level: ${spring.application.name:},%X{traceId:-},%X{spanId:-}
@@ -23,7 +52,10 @@ management:
     web:
       exposure:
         include: '*'
-
+      base-path: /ac
+  http exchanges:
+    recording:
+      enabled: true
   endpoint:
     health:
       show-details: always
@@ -49,3 +81,5 @@ management:
   observations:
     key-values:
       application: ${spring.application.name}
+
+
